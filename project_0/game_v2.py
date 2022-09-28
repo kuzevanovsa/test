@@ -25,7 +25,6 @@ def random_predict(number: int = 1) -> int:
 
 
 def predict(number: int = 1) -> int:
-    
     """Function to predict a random number in 20 or less tries
 
     Args:
@@ -36,25 +35,27 @@ def predict(number: int = 1) -> int:
     """
     
     count = 0
-    min_number = 1
-    max_number = 100
+    min_number = 1 # нижняя граница поиска
+    max_number = 101 # верхняя граница поиска
 
     while True:
         count += 1
-        predict_number = (max_number + min_number - 1) // 2  # предполагаемое число
+
+        predict_number = (max_number + min_number) // 2 # предполагаемое число
+            
         if number == predict_number:
             break  # выход из цикла если угадали
         elif number > predict_number:
-            # если угадываемое число больше предполагаемого, изменяем нижнюю границу
+            # если число больше предполагаемого, изменяем нижнюю границу
             min_number = predict_number
         else:
-            # если угадываемое число меньше предполагаемого, изменяем верхнюю границу
+            # если число меньше предполагаемого, изменяем верхнюю границу
             max_number = predict_number
     return count
 
 
 def score_game(random_predict) -> int:
-    """За какое количство попыток в среднем за 1000 подходов угадывает наш алгоритм
+    """За какое количество попыток в среднем за 1000 подходов угадывает наш алгоритм
 
     Args:
         random_predict ([type]): функция угадывания
