@@ -41,7 +41,7 @@ def predict(number: int = 1) -> int:
 
     while True:
         count += 1
-        predict_number = (max_number - min_number + 1) // 2  # предполагаемое число
+        predict_number = (max_number + min_number + 1) // 2  # предполагаемое число
         if number == predict_number:
             break  # выход из цикла если угадали
         elif number > predict_number:
