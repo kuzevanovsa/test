@@ -34,8 +34,7 @@
 
 
 ### Краткая информация о данных
-База резюме, выгруженная с сайта поиска вакансий hh.ru:
-https://drive.google.com/file/d/17f4ESrSIGnFh44x7qkfEVn2rtAd7sbQg/view?usp=sharing
+База резюме, выгруженная с сайта поиска вакансий hh.ru. Файл с данными можно скачать [здесь](https://drive.google.com/file/d/17f4ESrSIGnFh44x7qkfEVn2rtAd7sbQg/view?usp=sharing).
   
 :arrow_up:[к оглавлению](.README.md#Оглавление)
 
